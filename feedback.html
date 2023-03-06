@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        .topnav,#home a{
+                 background-color: #008b8b;
+                 overflow: hidden;
+                }
+        body{
+            background-color: lightgreen;
+            /* text-align: center; */
+        }
+        .heading{
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding-left: 10px 10px 10px 10px;
+            border-radius: 6px;
+            width: 280px;
+            margin: 2px 100px 2px 600px;
+            animation: blinker 1.5s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0.6;
+            }
+        }
+        .form{
+            background-color: lightgoldenrodyellow;
+            color: darkblue;
+            text-align: center;
+            width: 580px;
+            margin: 10px 100px 2px 460px;
+            border-radius: 20px;
+            
+        }
+        .logo{
+            float: left;
+        }
+        .h1{
+            text-align: center;
+        }
+        button {
+            text-align: center;
+            box-sizing: border-box;
+  			background-color: rgb(204, 38, 66);
+  			color: white;
+            width: 172px;
+            margin: auto;
+                padding: 10px;
+                padding: 10px;
+                padding-bottom: 10px;
+                border-radius: 20px;
+                text-emphasis: bold;
+                font-size: 0.42cm;
+                cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="logo">
+		<img src="logo.jpeg">
+	  </div><br>
+    <div id="home">
+      <a href="index.html">Home</a>
+   </div>
+  <div class="topnav">
+ 
+   
+   <a href="login.html" target="_blank">Login</a>
+   <div class="dropdown">
+     <button class="dropbtn">Extracurricular
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="xplorica.html" target="_blank">Xplorica</a>
+       <a href="culrav.html" target="_blank">Culrav</a>
+       <a href="estrella-1.html" target="_blank">Estrella</a>
+       <a href="sportivo.html" target="_blank">Sportivo</a>
+     </div>
+   </div>
+   <a href="Notice.jsp">Notice Board</a>
+   <!--<a href="#club" target="_blank">Extracurricular</a>-->
+   
+   <a href="courses.html" target="_blank">Streams</a>
+   <a href="gallery.jsp">Gallery</a>
+   <a href="contact.html">Contact</a>
+   <a href="About.html" class="hre">About</a> 
+   </div><br><br>
+    <div class="heading">
+        <h1>Feedback Form</h1>
+    </div><br><br>
+    <div class="form">
+        <form id="feedback" action="feedback" method="post">
+            <br>
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+            <label for="phn_no"><b>Mobile number</b></label>
+            <input type="number" name="mob" id="mob" placeholder="Enter your mobile number" maxlength="50">
+            <br><br>
+        <label for="email"><b>Email Id</b></label>  
+        <input type="email" id="email" name="email" placeholder="Enter your email id" >
+        <br><br>
+       
+        <label for="feedback"><b>Give your Feedback</b></label><br>
+        <textarea name="MyText" cols="50" rows="10" maxlength="50000" required></textarea><br>
+        <br>
+        <button type="submit">Submit Now</button>
+        <button type="reset">Reset Now</button><br>
+        </form>
+    </div>
+    <script>
+        let feedback= confirm("What do you think about our college, give your valuable opinion via filling this form.");
+      </script>
+</body>
+</html>
